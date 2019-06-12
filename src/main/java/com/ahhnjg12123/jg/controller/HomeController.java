@@ -11,14 +11,19 @@ public class HomeController {
     @RequestMapping("/{path}.html")
     public String chaxun(@PathVariable("path") String path, Model model){
         model.addAttribute("de", 123);
-//        System.out.println(path);
+        return "/page/"+path;
+    }
+
+
+    @RequestMapping("/{path}")
+    public String chaxun2(@PathVariable("path") String path, Model model){
+        model.addAttribute("de", 123);
         return "/page/"+path;
     }
 
     @RequestMapping("/{path}-{path2}.html")
-    public String chaxun(@PathVariable("path") String path, @PathVariable("path2") String path2, Model model){
+    public String chaxun3(@PathVariable("path") String path, @PathVariable("path2") String path2, Model model){
         model.addAttribute("de", 123);
-//        System.out.println(path);
         return "/page/"+path + "-" + path2;
     }
 }

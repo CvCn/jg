@@ -1,0 +1,78 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>在线查询系统</title>
+    <link href="/static/css/cyzg.css"  rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        window.alert = function(name){
+            var iframe = document.createElement("IFRAME");
+            iframe.style.display="none";
+            iframe.setAttribute("src", 'data:text/plain,');
+            document.documentElement.appendChild(iframe);
+            window.frames[0].window.alert(name);
+            iframe.parentNode.removeChild(iframe);
+        }
+    </script>
+    <script language="javascript" type="text/javascript" src="/static/js/DataCheck.js" ></script>
+</head>
+<body>
+
+<!-----内表开始-------->
+<form id="" name="" action="query" method="get">
+
+    <div style=" margin:0px auto; width:100%;background:#3D6DB5;color:#FFF; font-weight:bold; font-size:16px; text-align:center; line-height:30px">驾培信息电子查询系统</div>
+    <br>
+    <br>
+
+    <table width="472" border="0" align="center" cellpadding="0" cellspacing="0" class="nb_bj02">
+        <tr>
+            <td>
+                <table width="93%" border="0" align="center" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td width="30%" align="center" valign="middle" class="nb_hj">驾驶员身份证：</td>
+                        <td colspan="2" class="nb_hj"><input name="shenfenzheng" type="text" class="nb_wbk" id="shenfenzheng" maxlength="200" onBlur="checknumber(document.getElementById('shenfenzheng'),18)"/></td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="middle">驾驶员的姓名：</td>
+                        <td width="42%"><input type="text" name="xingming" class="nb_wbk" id="xingming"/>                              </td>
+                        <td align="left">&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="center" valign="middle"><table width="90%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                                <td align="center" valign="bottom">请正确填写信息后，点击下方查询按钮验证信息</td>
+                            </tr>
+                            <tr>
+                                <td align="center" valign="middle">
+                                    <input type="submit" value="查询" style="width:80px;margin:0px; padding:5px;text-align:center; display:block; overflow:hidden;  line-height:30px; color: #FFF;background:#3D6DB5;border-radius:3px; border:0px; font-size:18px; font-weight:bold;" />
+
+                            </tr>
+                        </table></td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+
+
+</form>
+<!---------结束----------->
+
+<div style="display: none;">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?e6f9a93b13b99f6ecf902688d21c7b6e";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</div>
+
+</body>
+</html>

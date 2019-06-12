@@ -1,0 +1,39 @@
+table{ border-collapse:collapse; border-spacing:0; }
+body {
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration:none;
+    color:#000}
+a:hover {
+    color: #ff0000;
+    text-decoration: none;
+}
+a:active {
+    color: #ff0000;
+}
+.nb_bj02 {
+    line-height: 40px;
+}
+.nb_hj {
+    padding-top: 8px;
+}
+.nb_wbk {
+    width: 300px;
+}
+.nb_xzk {
+    width: 160px;
+}
+
+
+.table6{ width:96%; margin:0 auto; border:1px solid #cfcfcf;color:#606060;}
+.table6	th,
+.table6	td{padding:0 5px; line-height:30px; border:1px solid #cfcfcf;}
+.table6	td{}
+.title14{ line-height:40px; font-size:14px; font-weight:bold;font-family:"Arial","寰蒋闆呴粦","瀹嬩綋";border-bottom:1px solid #c4cbd0; margin-bottom:10px; text-decoration:none;}
+
+.title15{ color:#666; line-height:40px; font-size:14px; font-weight:bold;font-family:"Arial","寰蒋闆呴粦","瀹嬩綋";margin-bottom:10px; text-decoration:none;}
